@@ -81,6 +81,8 @@ jobs:
           node-version: 12.x
       - name: install dependencies
         run: yarn install --frozen-lockfile
+      - name: build
+        run: yarn build:ts
       - name: test
         run: node_modules/.bin/ember try:one ${{ matrix.ember-try-scenario }} --skip-cleanup
 

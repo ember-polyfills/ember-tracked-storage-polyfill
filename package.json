@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "build:ts": "tsc && tsc --declaration --outDir commonjs --module CommonJS",
-    "build": "ember build --environment=production",
+    "build": "yarn build:ts && ember build --environment=production",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
     "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
     "lint:hbs": "ember-template-lint .",
