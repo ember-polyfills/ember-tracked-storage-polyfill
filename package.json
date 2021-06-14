@@ -32,8 +32,7 @@
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "yarn build:ts && ember test",
-    "test:ember-compatibility": "ember try:each",
-    "prepublish": "yarn build:ts"
+    "prepublishOnly": "yarn build:ts"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.3",
