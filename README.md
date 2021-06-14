@@ -29,8 +29,8 @@ import { createStorage, getValue, setValue } from '@glimmer/tracking/primitives/
 
 The extra complexity required to polyfill the import path as it will be in Ember
 itself is not compatible with Embroider, and generally not worth it. This import
-path will begin logging deprecations once the version of Ember with the real
-import path has been released, and updating will be as easy as find + replace.
+path will begin re-exporting from Ember as soon as the real version is
+available, making the transition seamless.
 
 Compatibility
 ------------------------------------------------------------------------------
