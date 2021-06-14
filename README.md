@@ -1,10 +1,10 @@
-tracked-storage-polyfill
+ember-tracked-storage-polyfill
 ==============================================================================
 
 Polyfills the tracked storage primitive from Ember/Glimmer.
 
 ```js
-import { createStorage, getValue, setValue } from 'tracked-storage-polyfill';
+import { createStorage, getValue, setValue } from 'ember-tracked-storage-polyfill';
 
 let storage = createStorage(true);
 
@@ -21,7 +21,7 @@ from Ember in the RFC:
 
 ```js
 // right
-import { createStorage, getValue, setValue } from 'tracked-storage-polyfill';
+import { createStorage, getValue, setValue } from 'ember-tracked-storage-polyfill';
 
 // wrong
 import { createStorage, getValue, setValue } from '@glimmer/tracking/primitives/storage';
@@ -44,7 +44,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install tracked-storage-polyfill
+ember install ember-tracked-storage-polyfill
 ```
 
 

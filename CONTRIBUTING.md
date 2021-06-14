@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd tracked-storage-polyfill`
+* `cd ember-tracked-storage-polyfill`
 * `yarn install`
 
 ## Linting

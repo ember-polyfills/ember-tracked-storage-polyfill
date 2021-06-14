@@ -4,7 +4,11 @@ import {
 } from '@glimmer/tracking/primitives/cache';
 
 import { module, test } from 'qunit';
-import { createStorage, getValue, setValue } from 'tracked-storage-polyfill';
+import {
+  createStorage,
+  getValue,
+  setValue,
+} from 'ember-tracked-storage-polyfill';
 
 module('Unit | Utils | Tracked Storage', () => {
   test('it works', function (assert) {

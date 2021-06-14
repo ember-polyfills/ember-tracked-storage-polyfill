@@ -1,11 +1,11 @@
 {
-  "name": "tracked-storage-polyfill",
+  "name": "ember-tracked-storage-polyfill",
   "version": "0.0.0",
   "description": "Polyfill of the Ember/Glimmer Tracked Storage primitive",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "https://github.com/ember-polyfills/tracked-storage-polyfill",
+  "repository": "https://github.com/ember-polyfills/ember-tracked-storage-polyfill",
   "license": "MIT",
   "author": "Chris Hewell Garrett",
   "main": "commonjs/index.js",
