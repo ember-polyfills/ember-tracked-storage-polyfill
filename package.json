@@ -1,6 +1,6 @@
 {
   "name": "ember-tracked-storage-polyfill",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Polyfill of the Ember/Glimmer Tracked Storage primitive",
   "keywords": [
     "ember-addon"
