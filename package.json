@@ -51,7 +51,7 @@
     "ember-auto-import": "^2.13.1",
     "ember-cli": "~3.27.0-beta.1",
     "ember-cli-dependency-checker": "^3.2.0",
-    "ember-cli-htmlbars": "^7.0.1",
+    "ember-cli-htmlbars": "^5.0.0",
     "ember-cli-inject-live-reload": "^2.0.2",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.1",
@@ -107,6 +107,16 @@
     "github": {
       "release": true,
       "tokenRef": "GITHUB_AUTH"
+    }
+  },
+  "resolutions": {
+    "minimatch": "^3.0.4",
+    "glob": "^7.1.7",
+    "babel-plugin-ember-template-compilation": "^1.0.0"
+  },
+  "pnpm":{
+    "overrides": {
+      "babel-plugin-ember-template-compilation": "^2.0.0"
     }
   },
   "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8"
