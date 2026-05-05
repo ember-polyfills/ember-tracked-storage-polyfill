@@ -63,7 +63,7 @@ jobs:
       with:
         node-version: ${{ matrix.node }}
         cache: yarn
-    - run: yarn install --frozen-lockfile
+    - run: yarn install --frozen-lockfile --ignore-engines
     - run: yarn test
 
   floating-dependencies:
