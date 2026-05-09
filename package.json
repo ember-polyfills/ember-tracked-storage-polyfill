@@ -42,6 +42,7 @@
     "lint:publish": "pnpm build && publint run --level error",
     "lint:types": "ember-tsc --noEmit",
     "prepack": "rollup --config",
+    "prepare": "rollup --config",
     "start": "vite dev",
     "test": "vite build --mode=development --out-dir dist-tests && testem --file testem.cjs ci --port 0"
   },
