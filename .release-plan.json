@@ -1,0 +1,22 @@
+{
+  "solution": {
+    "ember-tracked-storage-polyfill": {
+      "impact": "patch",
+      "oldVersion": "1.0.0",
+      "newVersion": "1.0.1",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2026-05-09)\n\n* ember-tracked-storage-polyfill 1.0.1 (patch)\n\n#### :bug: Bug Fix\n* `ember-tracked-storage-polyfill`\n  * [#3](https://github.com/ember-polyfills/ember-tracked-storage-polyfill/pull/3) remove ember-cli-htmlbars as a dependency ([@mansona](https://github.com/mansona))\n\n#### :house: Internal\n* `ember-tracked-storage-polyfill`\n  * [#5](https://github.com/ember-polyfills/ember-tracked-storage-polyfill/pull/5) Setup release plan ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n  * [#4](https://github.com/ember-polyfills/ember-tracked-storage-polyfill/pull/4) Clean up CI and use pnpm for local development ([@mansona](https://github.com/mansona))\n\n#### Committers: 2\n- Chris Manson ([@mansona](https://github.com/mansona))\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+}
