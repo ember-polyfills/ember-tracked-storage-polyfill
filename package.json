@@ -83,8 +83,6 @@
     "prettier": "^2.2.1",
     "qunit": "^2.14.1",
     "qunit-dom": "^1.6.0",
-    "release-it": "^14.2.1",
-    "release-it-lerna-changelog": "^3.1.0",
     "release-plan": "^0.18.0",
     "webpack": "^5.106.2"
   },
@@ -106,20 +104,5 @@
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "main": "ember-addon-main.js"
-  },
-  "release-it": {
-    "plugins": {
-      "release-it-lerna-changelog": {
-        "infile": "CHANGELOG.md",
-        "launchEditor": true
-      }
-    },
-    "git": {
-      "tagName": "v${version}"
-    },
-    "github": {
-      "release": true,
-      "tokenRef": "GITHUB_AUTH"
-    }
   }
 }
