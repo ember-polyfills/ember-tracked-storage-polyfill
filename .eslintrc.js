@@ -2,15 +2,18 @@
 
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module',
-    ecmaFeatures: {
-      legacyDecorators: true,
+    requireConfigFile: false,
+    babelOptions: {
+      plugins: [
+        ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
+      ],
     },
   },
-  plugins: ['ember', '@typescript-eslint'],
+  plugins: ['ember'],
   extends: [
     'eslint:recommended',
     'plugin:ember/recommended',
@@ -54,10 +57,6 @@ module.exports = {
       // Test files:
       files: ['tests/**/*-test.{js,ts}'],
       extends: ['plugin:qunit/recommended'],
-    },
-    {
-      files: ['**/*.ts'],
-      extends: ['plugin:@typescript-eslint/recommended'],
     },
   ],
 };
