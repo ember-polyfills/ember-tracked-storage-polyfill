@@ -24,7 +24,7 @@ module('Unit | Utils | Tracked Storage', () => {
     assert.equal(
       getValue(storage),
       undefined,
-      'does not have a value initially'
+      'does not have a value initially',
     );
     assert.equal(getCacheValue(cache), 1, 'cache runs the first time');
     assert.equal(getCacheValue(cache), 1, 'cache does not the second time');
@@ -40,7 +40,7 @@ module('Unit | Utils | Tracked Storage', () => {
     assert.equal(
       getCacheValue(cache),
       2,
-      'cache not ran after storage was set to same value'
+      'cache not ran after storage was set to same value',
     );
   });
 
@@ -64,7 +64,7 @@ module('Unit | Utils | Tracked Storage', () => {
     assert.equal(
       getCacheValue(cache),
       1,
-      'cache not ran after storage was set to same value'
+      'cache not ran after storage was set to same value',
     );
 
     setValue(storage, 456);
@@ -73,7 +73,7 @@ module('Unit | Utils | Tracked Storage', () => {
     assert.equal(
       getCacheValue(cache),
       2,
-      'cache ran after storage was set to different value'
+      'cache ran after storage was set to different value',
     );
   });
 
@@ -102,7 +102,7 @@ module('Unit | Utils | Tracked Storage', () => {
     assert.equal(
       getCacheValue(cache),
       3,
-      'cache ran after storage was set to different value'
+      'cache ran after storage was set to different value',
     );
   });
 });
