@@ -31,6 +31,11 @@
     "test": "npm-run-all test:*",
     "test:ember": "ember test"
   },
+  "resolutions": {
+    "babel-plugin-ember-template-compilation": "^1.0.0",
+    "glob": "^7.1.7",
+    "minimatch": "^3.0.4"
+  },
   "dependencies": {
     "ember-cli-babel": "^7.26.3"
   },
@@ -78,15 +83,20 @@
     "prettier": "^2.2.1",
     "qunit": "^2.14.1",
     "qunit-dom": "^1.6.0",
-    "release-it": "^14.2.1",
-    "release-it-lerna-changelog": "^3.1.0",
+    "release-plan": "^0.18.0",
     "webpack": "^5.106.2"
   },
+  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
   "engines": {
     "node": "12.* || >= 14"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
+  },
+  "pnpm": {
+    "overrides": {
+      "babel-plugin-ember-template-compilation": "^2.0.0"
+    }
   },
   "ember": {
     "edition": "octane"
@@ -94,31 +104,5 @@
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "main": "ember-addon-main.js"
-  },
-  "release-it": {
-    "plugins": {
-      "release-it-lerna-changelog": {
-        "infile": "CHANGELOG.md",
-        "launchEditor": true
-      }
-    },
-    "git": {
-      "tagName": "v${version}"
-    },
-    "github": {
-      "release": true,
-      "tokenRef": "GITHUB_AUTH"
-    }
-  },
-  "resolutions": {
-    "minimatch": "^3.0.4",
-    "glob": "^7.1.7",
-    "babel-plugin-ember-template-compilation": "^1.0.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "babel-plugin-ember-template-compilation": "^2.0.0"
-    }
-  },
-  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8"
+  }
 }
