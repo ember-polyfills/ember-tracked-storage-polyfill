@@ -1,5 +1,6 @@
 allowBuilds:
   esbuild: false
+  core-js: false
 
 # Docs: https://pnpm.io/settings
 # https://github.com/emberjs/rfcs/pull/907
