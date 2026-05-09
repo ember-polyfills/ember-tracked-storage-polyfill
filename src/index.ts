@@ -26,11 +26,11 @@ function tripleEq(a: unknown, b: unknown) {
 
 export function createStorage<T = unknown>(
   initialValue: T,
-  isEqual: (a: T, b: T) => boolean = tripleEq
+  isEqual: (a: T, b: T) => boolean = tripleEq,
 ): TrackedStorage<T> {
   assert(
     'the second parameter to `createStorage` must be an equality function or undefined',
-    typeof isEqual === 'function'
+    typeof isEqual === 'function',
   );
 
   return new TrackedStorageImpl(initialValue, isEqual);
@@ -39,9 +39,10 @@ export function createStorage<T = unknown>(
 export function getValue<T>(storage: TrackedStorage<T>): T {
   assert(
     'getValue must be passed a tracked store created with `createStorage`.',
-    storage instanceof TrackedStorageImpl
+    storage instanceof TrackedStorageImpl,
   );
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return storage._value;
 }
 
@@ -50,13 +51,14 @@ type TrackedStorageValue<T extends TrackedStorage<unknown>> =
 
 export function setValue<T extends TrackedStorage<unknown>>(
   storage: T,
-  value: TrackedStorageValue<T>
+  value: TrackedStorageValue<T>,
 ): void {
   assert(
     'setValue must be passed a tracked store created with `createStorage`.',
-    storage instanceof TrackedStorageImpl
+    storage instanceof TrackedStorageImpl,
   );
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const { _isEqual: isEqual, _lastValue: lastValue } = storage;
 
   if (!isEqual(value, lastValue)) {
