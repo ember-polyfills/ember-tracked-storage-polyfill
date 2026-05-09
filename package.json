@@ -11,7 +11,6 @@
   "imports": {
     "#src/*": "./src/*"
   },
-  "packageManager": "pnpm@11.0.9",
   "exports": {
     ".": {
       "types": "./declarations/index.d.ts",
@@ -96,6 +95,7 @@
     "typescript-eslint": "^8.19.1",
     "vite": "^7.1.9"
   },
+  "packageManager": "pnpm@11.0.9",
   "ember": {
     "edition": "octane"
   },
